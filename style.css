@@ -1,0 +1,271 @@
+body {
+  background-color: #f3f3f3;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#title  {
+  font-family: Rubik;
+  font-size: 6em;
+  margin: 0;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+}
+
+td {
+  font-family: Rubik;
+  font-size: 2em;
+  width: 5vw;
+  height: 5vw;
+  text-align: center;
+  border-radius: 5%;
+  border: 5px solid Black;
+  color: black;
+}
+
+#ans_hash, #ans_1, #ans_2, #ans_3, #ans_4, #ans_5, #ans_6 {
+  visibility: hidden;
+  opacity : 0;
+  transition: visibility 0s, opacity 3s, display 0s;
+}
+
+#answer{
+  display: none;
+  transition: display: 0s;
+}
+
+#info{
+  text-align: center;
+  width:25vw;
+  max-height:70vh;
+  margin:auto;
+  margin-top: 12.5vh;
+  margin-bottom: 12.5vh;
+  background-color: black;
+  display: block;
+  border-radius: 2.5%;
+  padding: 2%;
+  padding-bottom: 5%;
+}
+
+#modal{
+  font-family: Rubik;
+  margin: auto;
+  width:100%;
+  height:100%;
+  z-index: 1;
+  position: fixed;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+  transition: visibility 0s, opacity 1s linear;
+}
+
+#ans_hash.reveal, #ans_1.reveal, #ans_2.reveal, #ans_3.reveal, #ans_4.reveal, #ans_5.reveal, #ans_6.reveal, #modal.reveal {
+  visibility: visible;
+  opacity : 1;
+}
+
+#modal.reveal{
+  visibility : visible;
+}
+
+#answer.reveal{
+  display: inline;
+}
+
+.info_txt{
+  padding: 0;
+  margin: 2.5%;
+  color: #F3F3F3;
+}
+
+#exit{
+  position: absolute;
+  right: 3vw;
+  top: 3vh;
+  display: block;
+  border: none;
+  background: none;
+  font-family: Rubik;
+  font-size: 2em;
+  color: #f3f3f3;
+}
+
+.stats{
+  font-size: 0.5rem;
+  width: 100%;
+  margin: 0;
+}
+#stats{
+  float:none;
+  border-collapse: collapse;
+  table-layout:fixed;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#div_stat{
+  height: inherit;
+}
+.stats_box{
+  margin: 0 auto;
+  color: #f3f3f3;
+  padding: 0;
+  border: 2px solid #f3f3f3;
+  height: auto;
+}
+.left{
+  font-size: 2.5rem;
+  color: #f3f3f3;
+  padding: 0;
+  margin: 0;
+  border: 2px solid #f3f3f3;
+  max-height: 10%;
+  width: 10%;
+  height: auto;
+}
+.right{
+  text-align: left;
+  font-size: 1rem;
+  color: #f3f3f3;
+  padding: 0;
+  margin: 0 auto;
+  border: 2px solid #f3f3f3;
+  max-height: 10%;
+  width: 55rem;
+  height: auto;
+}
+
+mark{
+  vertical-align: central;
+  display: inline-block;
+  float: left;
+  color: #f3f3f3;
+  background-color: #f3f3f3;
+}
+
+h4{
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  display: inline-block;
+  float: left;
+  color: #f3f3f3;
+}
+h5, h3{
+  color: #f3f3f3;
+}
+
+#help{
+  max-height: 50%;
+  text-align: left;
+}
+
+#hyelphyelp, .newGame{
+  font-size: 1rem;
+  color: black;
+  width:fit-content;
+  font-family:Rubik;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  border: 5px solid Black;
+}
+
+#failNewGame{
+  margin: 2.5%;
+  visibility: hidden;
+}
+
+#keyboard{
+  visibility: hidden;
+  display: none;
+}
+
+@media only screen and (max-width:400px){
+  #title{
+    font-size: 4em;
+  }
+  
+  #info{
+    width:75vw;
+  }
+  
+  td {
+    border: 3px solid Black;
+    font-family: Rubik;
+    font-size: 1.5em;
+    width: 10vw;
+    height: 10vw;
+  }
+  #keyboard {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    visibility: visible;
+    display: inline;
+  }
+  .key{
+    border-radius: 5%;
+    border: 3px solid black;
+    width: 6vh;
+    height: 6vh;
+  }
+  .keyButton {
+    border: none;
+  }
+  
+}
+
+@media only screen and (max-width:500px){
+  #title{
+    font-size: 4em;
+  }
+  
+  #info{
+    width:85vw;
+  }
+  
+  td {
+    border: 3px solid Black;
+    font-family: Rubik;
+    font-size: 1.5em;
+    width: 10vw;
+    height: 10vw;
+  }
+  #keyboard {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    visibility: visible;
+    display: inline;
+  }
+  .key{
+    border-radius: 5%;
+    border: 3px solid black;
+    width: 6vh;
+    height: 6vh;
+  }
+  .keyButton {
+    border: none;
+  }
+  
+}
+
+h6{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0.5rem;
+  color: black;
+  width:fit-content;
+  font-family:Rubik;
+  background-color: #f3f3f3;
+}
